@@ -1,8 +1,8 @@
-FROM tomcat:9.0-jdk17-temurin
+FROM tomcat:10.1-jdk21-temurin
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY *.war /usr/local/tomcat/webapps
+COPY QuanLyCanHo-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 
